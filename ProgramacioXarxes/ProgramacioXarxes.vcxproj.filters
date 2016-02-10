@@ -24,12 +24,18 @@
     <ClCompile Include="SocketTools.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="SocketAdress.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GenericSocket.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="SocketTools.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SocketAdress.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

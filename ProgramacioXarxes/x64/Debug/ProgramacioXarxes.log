@@ -1,8 +1,8 @@
-﻿Build started 10/02/2016 17:06:16.
+﻿Build started 10/02/2016 18:42:14.
      1>Project "C:\Users\rcoll\Desktop\ProgramacioXarxes\Prog\ProgramacioXarxes\ProgramacioXarxes.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"x64\Debug\\" /Fd"x64\Debug\vc140.pdb" /Gd /TP /errorReport:prompt SocketTools.cpp
-         SocketTools.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"x64\Debug\\" /Fd"x64\Debug\vc140.pdb" /Gd /TP /errorReport:prompt main.cpp
+         main.cpp
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\rcoll\Desktop\ProgramacioXarxes\Prog\x64\Debug\ProgramacioXarxes.exe" /INCREMENTAL /NOLOGO d3d11.lib dxguid.lib winmm.lib comctl32.lib Ws2_32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:\Users\rcoll\Desktop\ProgramacioXarxes\Prog\x64\Debug\ProgramacioXarxes.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\rcoll\Desktop\ProgramacioXarxes\Prog\x64\Debug\ProgramacioXarxes.lib" /MACHINE:X64 x64\Debug\GenericSocket.obj
          x64\Debug\main.obj
@@ -12,4 +12,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:00.89
+Time Elapsed 00:00:00.88

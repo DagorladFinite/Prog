@@ -9,7 +9,18 @@ int main() {
 
 	GenericSocket socket1(SOCK_STREAM);
 
-	SocketTools::CloseLibrary();
+	sockaddr_in sa_in;
+	sa_in.sin_addr.S_un.S_un_b.s_b1 = 127;
+	sa_in.sin_addr.S_un.S_un_b.s_b2 = 0;
+	sa_in.sin_addr.S_un.S_un_b.s_b3 = 0;
+	sa_in.sin_addr.S_un.S_un_b.s_b4 = 1;
+
+	std::cout << sa_in.sin_addr.S_un.S_addr<<std::endl;
+
+
+
+
+	//SocketTools::CloseLibrary();
 
 	system("pause");
 }
