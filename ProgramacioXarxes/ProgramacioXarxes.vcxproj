@@ -87,6 +87,7 @@
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>d3d11.lib;dxguid.lib;winmm.lib;comctl32.lib;Ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -118,6 +119,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="GenericSocket.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="SocketTools.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GenericSocket.h" />
+    <ClInclude Include="SocketTools.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
