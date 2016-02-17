@@ -23,6 +23,11 @@ SocketAdress::SocketAdress(int b1, int b2, int b3, int b4, int port) {
 	address.sin_addr.S_un.S_un_b.s_b4 = b4;
 
 	address.sin_port = port;
+
+	for (size_t i = 0; i < 8; i++)
+	{
+		address.sin_zero[i] = 0;
+	}
 }
 
 int SocketAdress::SetAdress(const std::string & inString)
