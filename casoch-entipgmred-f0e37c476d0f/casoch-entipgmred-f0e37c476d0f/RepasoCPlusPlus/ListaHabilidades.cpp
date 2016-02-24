@@ -49,7 +49,7 @@ ListaHabilidades::ListaHabilidades(ListaHabilidades & listhab)
 
 std::ostream& operator<<(std::ostream& os, ListaHabilidades & listhab)
 {
-	for (size_t i = 0; i < listhab.size(); i++)
+	for (int i = 0; i < listhab.size(); i++)
 	{
 		os << listhab[i] << "\n";
 	}

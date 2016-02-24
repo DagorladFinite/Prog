@@ -15,6 +15,7 @@ public:
 	SocketAddress(SocketAddress& sa);
 	friend std::ostream& operator<<(std::ostream& os, SocketAddress& sa);
 	int SetAddress(const std::string & inString);
+	int SetAddress(sockaddr address);
 	~SocketAddress();
 	sockaddr getAddr();
 };

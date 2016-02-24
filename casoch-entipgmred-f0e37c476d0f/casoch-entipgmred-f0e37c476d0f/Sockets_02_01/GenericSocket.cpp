@@ -2,6 +2,11 @@
 #include "SocketTools.h"
 
 
+SOCKET GenericSocket::GetSock()
+{
+	return sock;
+}
+
 GenericSocket::GenericSocket(int type)
 {
 	sock = socket(AF_INET, type, 0);
@@ -31,6 +36,6 @@ int GenericSocket::Bind(SocketAddress & address)
 		return -1;
 	}
 	SocketTools::MostrarError("Binded!");
-	system("pause");
+	//system("pause");
 	return 0;
 }

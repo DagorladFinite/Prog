@@ -42,7 +42,8 @@ std::istream& operator>>(std::istream& is, Habilidad & habilidad)
 	return is;
 }
 
-bool Habilidad::operator==(Habilidad & _h)
+bool Habilidad::operator==(const 
+	Habilidad & _h)
 {
 	if (strcmp(_h.nombre, nombre) == 0)
 	{

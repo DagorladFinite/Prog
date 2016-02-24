@@ -13,6 +13,6 @@ public:
 	friend std::ostream& operator<<(std::ostream& os, Habilidad& habilidad);
 	friend std::istream& operator>>(std::istream& is, Habilidad& habilidad);
 	~Habilidad();
-	bool operator==(Habilidad &_h);
+	bool operator==(const Habilidad &_h);
 };
 

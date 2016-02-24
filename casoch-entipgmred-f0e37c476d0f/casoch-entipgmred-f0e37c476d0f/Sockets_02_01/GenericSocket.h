@@ -9,6 +9,7 @@ class GenericSocket
 private:
 	SOCKET sock;
 public:
+	SOCKET GetSock();
 	GenericSocket(int type);
 	~GenericSocket();
 	int Bind(SocketAddress& address);

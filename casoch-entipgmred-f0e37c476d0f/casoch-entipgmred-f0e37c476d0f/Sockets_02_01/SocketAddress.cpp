@@ -115,3 +115,10 @@ int SocketAddress::SetAddress(const std::string & inString)
 
 	return 0;
 }
+
+int SocketAddress::SetAddress(sockaddr address) {
+
+	memcpy(&sa_in, &address, sizeof(sockaddr));
+
+	return 0;
+}
