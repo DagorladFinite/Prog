@@ -13,8 +13,9 @@ void ClientLoop(std::string direccion)
 		address.SetAddress(direccion);
 		//Cliente
 		
+		
 		std::string input;
-		std::getline(std::cin,input);
+		std::getline(std::cin, input);
 
 		socket.Enviar(input.c_str(), sizeof(input), address);
 
