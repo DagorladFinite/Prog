@@ -35,7 +35,6 @@ int GenericSocket::Bind(SocketAddress & address)
 		SocketTools::MostrarError("Error al GenericSocket::Bind");
 		return -1;
 	}
-	SocketTools::MostrarError("Binded!");
 	//system("pause");
 	return 0;
 }
