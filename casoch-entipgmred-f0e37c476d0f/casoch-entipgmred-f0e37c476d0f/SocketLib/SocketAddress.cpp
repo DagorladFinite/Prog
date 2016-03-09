@@ -38,6 +38,19 @@ SocketAddress::~SocketAddress()
 {
 }
 
+sockaddr SocketAddress::getAddr()
+{
+	sockaddr ret;
+	memcpy(&ret, &sa_in, sizeof(sockaddr));
+	return ret;
+}
+
+void SocketAddress::getAddr(sockaddr & sa)
+{
+	memcpy(&sa, &sa_in, sizeof(sockaddr));
+	//return sockaddr();
+}
+
 std::ostream & operator<<(std::ostream & os, SocketAddress & sa)
 {
 	//Como s_b1, 2, 3 y 4 son números de 8 bits, trata de imprimirlos como si fueran chars.
@@ -105,6 +118,13 @@ int SocketAddress::SetAddress(const std::string & inString)
 	memcpy(&sa_in, result->ai_addr, sizeof(sockaddr_in));
 	//address.sin_port = htons(address.sin_port);
 	freeaddrinfo(result);
+
+	return 0;
+}
+
+int SocketAddress::SetAddress(sockaddr address) {
+
+	memcpy(&sa_in, &address, sizeof(sockaddr));
 
 	return 0;
 }

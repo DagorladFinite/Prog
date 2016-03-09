@@ -45,6 +45,12 @@ sockaddr SocketAddress::getAddr()
 	return ret;
 }
 
+void SocketAddress::getAddr(sockaddr & sa)
+{
+	memcpy(&sa, &sa_in, sizeof(sockaddr));
+	//return sockaddr();
+}
+
 std::ostream & operator<<(std::ostream & os, SocketAddress & sa)
 {
 	//Como s_b1, 2, 3 y 4 son números de 8 bits, trata de imprimirlos como si fueran chars.

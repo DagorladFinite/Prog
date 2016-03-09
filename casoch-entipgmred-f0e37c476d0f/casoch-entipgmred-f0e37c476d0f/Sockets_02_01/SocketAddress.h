@@ -18,5 +18,6 @@ public:
 	int SetAddress(sockaddr address);
 	~SocketAddress();
 	sockaddr getAddr();
+	void getAddr(sockaddr &sa);
 };
 
